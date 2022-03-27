@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[36]:
-
-
 import math
 import numpy as np
 import matplotlib.pyplot as plt
@@ -73,7 +67,6 @@ print('After', years, 'years, the new carbon dioxide level is', int((ppm_change_
 print('The new temperature', years, 'years from now is', new_temp , 'degrees Kelvin if carbon dioxide is added at a constant rate.\n')
 
     
-    
 X = np.linspace(0, years, 5)
 Y = initial_co2 + ppm_change_co2 * X
 
@@ -92,22 +85,3 @@ plt.title('Increase in Temperature (K) Over Time (years) after CO2 Input\n')
 plt.xlabel('Time (years)')
 plt.ylabel('Temperature (K)')
 plt.show()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
