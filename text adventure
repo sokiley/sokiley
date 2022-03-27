@@ -1,0 +1,167 @@
+#include <iostream>
+#include <stdlib.h>
+#include <cmath>
+
+int main () {
+
+std::cout << "====================================\n";
+std::cout << "The Lord of the Rings Text Adventure\n";
+std::cout << "====================================\n";
+
+
+std::cout << "The Fellowship spends its final days in the elvish city of Lothlorien. It is nearly time to choose\n";
+std::cout << "which path to take going forward to Mordor. Before you leave though, you seek counsel in Celeborn and\n";
+std::cout << "Galadriel. They cannot reveal much except that the way to Minas Tirith in the west may be easy travel but the Ring may fall into the wrong hands. The\n";
+std::cout << "only other paths are to travel on the eastern bank of the Great River through Enemy control or to\n";
+std::cout << "travel the length of the Great River to Mordor.\n\n";
+
+  std::cout << "Which path do you choose?\n";
+ 
+    int choice1;
+    for (int i = 0; i < 3 && choice1 != 1 && choice1 != 2 && choice1 != 3; i++) {
+
+      std::cout << "1) The way to Minas Tirith\n";
+      std::cout << "2) The path east of the Great River\n";
+      std::cout << "3) Travel the length of the Great River\n\n";
+
+      std::cin >> choice1;
+ }
+      if (choice1 != 1 && choice1 != 2 && choice1 != 3) {
+        std::cout << "Invalid entry. Goodbye.";
+
+        return 0;
+      }
+
+      else if (choice1 == 1) {
+        std::cout << "You choose the path to Minas Tirith, the last\n";
+        std::cout <<"stronghold of Men before Mordor. The terrain is\n";
+        std::cout <<"easy to traverse and you do not encounter any\n";
+        std::cout << "enemies except for Gollum who has been trailing you\n";
+        std::cout << "since the Mines of Moria. After several weeks of\n";
+        std::cout << "travel you come to Minas Tirith, but when you\n";
+        std::cout << "arrive the city has already been captured by\n";
+        std::cout << "Sauron's growing army. The Orcs attack the\n";
+        std::cout << "Fellowship slaying most and imprisoning the rest.\n";
+        std::cout << "They obtain the Ring and Sauron returns to power.\n";
+        std::cout <<"The Enemy has conquered Middle Earth.\n\n";
+        std::cout << "                 THE END.\n";
+
+            return 0;
+      }
+     
+      else if (choice1 == 3){
+        std::cout << "You choose to travel the length of the Great River to Mordor. You easily pass through Enemy lands\n";
+        std::cout << "undetected for some time. However, Gollum has been tracking you and alerts the Enemy of your\n";
+        std::cout << "whereabouts. As you come across the Rapids, the\n";
+        std::cout << "Enemy surrounds you on both banks of the Great\n";
+        std::cout << "River, cutting off your escape and driving you over\n";
+        std::cout << "the waterfalls. None of the Fellowship survives and\n";
+        std::cout << "the Ring is lost for centuries again before Sauron eventually obtains it and and returns to power. The\n";
+        std::cout << "Enemy conquers Middle Earth.\n\n";
+        std::cout << "                 THE END.\n";
+
+            return 0;
+      }
+   
+
+
+
+ std::cout << "After choosing to cross the Great River and travel in Enemy territory on the east bank, the Fellowship\n";
+ std::cout << "must decide either to disband or stay together\n";
+ std::cout << "until Mount Doom.\n\n"; 
+
+ std::cout << "Which do you choose?\n";
+
+  int choice2;
+    for (int i = 0; i < 2 && choice2 != 1 && choice2 != 2; i++) {
+       
+       std::cout << "1) Keep the Fellowship of the Ring together\n";
+       std::cout << "2) Disband the Fellowship\n\n";
+
+       std::cin >> choice2;
+
+    }
+
+   if (choice2 != 1 && choice2 != 2) {
+        std::cout << "Invalid entry. Goodbye.";
+
+        return 0;
+      }
+
+      else if (choice2 == 1) {
+         std::cout << "You choose to keep the Fellowship. You cross the\n";
+         std::cout << "Great River safely and travel on the eastern bank\n";
+         std::cout << "for some time. After several days though, the Enemy\n";
+         std::cout << "spots your large group travelling southward. Since you are in their lands, they easily surround you\n";
+         std::cout << "and each of the Fellowship is slayed. The Orcs\n";
+         std::cout << "deliver the Ring to Sauron who then returns to\n";
+         std::cout << "power. The Enemy conquers Middle Earth.\n\n";
+         std::cout << "                THE END\n";
+
+         return 0;
+
+      }
+
+
+
+  std::cout << "You choose to disband the Fellowship. Frodo and Sam\n";
+  std::cout << "cross the Great River, while the rest embark on\n";
+  std::cout << "their journey to Minas Tirith. As the remaining\n";
+  std::cout << "members of the Fellowship begin to leave though, a group of Orcs attacks them, killing Boromir and\n";
+  std::cout << "kidnapping Merry and Pippin.\n\n";
+
+  std::cout << "Do you choose to track down Merry and Pippin or continue to Minas Tirith?\n";
+  
+int choice3;
+    for (int i = 0; i < 2 && choice3 != 1 && choice3 != 2; i++) {
+       
+       std::cout << "1) Find Merry and Pippin\n";
+       std::cout << "2) Go straight to Minas Tirith\n\n";
+
+       std::cin >> choice3;
+
+    }
+
+   if (choice3 != 1 && choice3 != 2) {
+        std::cout << "Invalid entry. Goodbye.";
+
+        return 0;
+      }
+
+  else if (choice3 == 2) { 
+        std::cout << "You choose to travel directly to Minas Tirith. You arrive to the city quickly before the Enemy has\n";
+        std::cout << "attacked. However, Merry and Pippin have been\n";
+        std::cout << "killed by the Orcs after they discover they do not carry the Ring. Any help they could have offered is\n";
+        std::cout << "gone and Sauroman's forces remain strong. In turn, Minas Tirith is attacked and destroyed despite your\n";
+        std::cout << "aid. You are no longer able to offer any aid to\n";
+        std::cout << "Frodo who is now at Mount Doom. Frodo and Sam are\n";
+        std::cout << "caught and killed by the masses of Orcs and Goblins\n";
+        std::cout << "at the foot of Mount Doom. The Ring is delivered to\n";
+        std::cout << "Sauron and he returns to power. The Enemy conquers Middle Earth.\n\n";
+        std::cout << "                 THE END.\n";
+
+        return 0;
+  }
+
+  std::cout << "You choose to find Merry and Pippin. Though this\n";
+  std::cout << "path delays your return to Minas Tirith, you are\n";
+  std::cout << "able to protect the halflings from further harm. On\n";
+  std::cout << "the way, you also discover that Gandalf is alive,\n";
+  std::cout << "now known as Gandalf the White. Merry and Pippin\n";
+  std::cout << "defeat Sauroman's forces, weakening the coming\n";
+  std::cout << "attack on Minas Tirith. With Gandalf's help you\n";
+  std::cout << "arrive in Minas Tirith just before the Enemy\n";
+  std::cout << "arrives and help defend the city. You are able to\n";
+  std::cout << "send an army to the Black Gates of Mordor to draw\n"; 
+  std::cout << "out the Orcs and Goblins at the foot of Mount Doom,\n";
+  std::cout << "and Frodo and Sam pass through undetected. They\n";
+  std::cout << "cast the Ring into the fire of Mount Doom from\n"; 
+  std::cout << "whence it came, defeating the Enemy and saving\n";
+  std::cout << "Middle Earth.\n\n";
+  std::cout << "                       THE END.\n";
+
+
+
+
+  
+}
