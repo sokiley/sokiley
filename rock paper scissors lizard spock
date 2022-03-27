@@ -1,0 +1,119 @@
+#include <iostream>
+#include <stdlib.h>
+
+int main () {
+/*
+Rock paper scissors lizard spock
+*/
+
+  srand (time(NULL));
+  int computer = rand() % 3 + 1;
+  int user = 0;
+
+
+  std::cout << "=================================\n";
+  std::cout << "rock paper scissors lizard spock!\n";
+  std::cout << "=================================\n";
+
+  std::cout <<"1) ✊\n";
+  std::cout <<"2) ✋\n";
+  std::cout <<"3) ✌️\n";
+  std::cout <<"4) L\n";
+  std::cout <<"5) S\n";
+
+  std::cout << "shoot! ";
+
+  /* 
+  rock > scissors
+  scissors > paper
+  paper > rock
+  lizard > spock
+  spock > scissors
+  scissors > lizard
+  lizard > paper
+  paper > spock
+  spock > rock
+  rock > lizard
+  */
+
+  std::cin >> user;
+
+    if (user == 1 && computer == 1) {
+      std::cout << "Tie!\n";
+    }
+    else if (user == 1 && computer == 2) {
+      std::cout << "Computer Wins!\n";
+    }
+    else if (user == 1 && computer == 3) {
+      std::cout << "User Wins!\n";
+    }
+    else if (user == 1 && computer == 4) {
+      std::cout << "User Wins!\n";
+    }
+    else if (user == 1 && computer == 5) {
+      std::cout << "Computer Wins!\n";
+    }
+    else if (user == 2 && computer == 1) {
+      std::cout << "User Wins!\n";
+    }
+    else if (user == 2 && computer == 2) {
+      std::cout << "Tie!\n";
+    }
+    else if (user == 2 && computer == 3) {
+      std::cout << "Computer Wins!\n";
+    }
+      else if (user == 2 && computer == 4) {
+      std::cout << "User Wins!\n";
+    }
+      else if (user == 2 && computer == 5) {
+      std::cout << "User Wins!\n";
+    }
+    else if (user == 3 && computer == 1) {
+      std::cout << "Computer Wins!\n";
+    }
+    else if (user == 3 && computer == 2) {
+      std::cout << "User Wins!\n";
+    }
+    else if (user == 3 && computer == 3) {
+      std::cout << "Tie!\n";
+    }
+     else if (user == 3 && computer == 4) {
+      std::cout << "User Wins!\n";
+    }
+     else if (user == 3 && computer == 5) {
+      std::cout << "Computer Wins!\n";
+    }
+    else if (user == 4 && computer == 1) {
+      std::cout << "Computer Wins!\n";
+    }
+     else if (user == 4 && computer == 2) {
+      std::cout << "User Wins!\n";
+    } 
+    else if (user == 4 && computer == 3) {
+      std::cout << "Computer Wins!\n";
+    } 
+    else if (user == 4 && computer == 4) {
+      std::cout << "Tie!\n";
+    } 
+    else if (user == 4 && computer == 5) {
+      std::cout << "User Wins!\n";
+    }
+    else if (user == 5 && computer == 1) {
+      std::cout << "User Wins!\n";
+    }
+    else if (user == 5 && computer == 2) {
+      std::cout << "Computer Wins!\n";
+    }
+    else if (user == 5 && computer == 3) {
+      std::cout << "User Wins!\n";
+    }
+    else if (user == 5 && computer == 4) {
+      std::cout << "Computer Wins!\n";
+    }
+    else if (user == 5 && computer == 5) {
+      std::cout << "Tie!\n";
+    }
+    else {
+      std::cout <<"Invalid entry.\n";
+    }
+}
