@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @sokiley
 - 👀 I’m interested in engineering physics and climate physics.
-- 🌱 I’m currently learning Python and C++.
+- 🌱 I’m currently learning Python, C++, MATLAB, and LaTex.
 - 📫 How to reach me:
 				email - skiley.00.14@gmail.com
 
