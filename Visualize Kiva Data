@@ -1,0 +1,55 @@
+from matplotlib import pyplot as plt
+import pandas as pd
+import seaborn as sns
+import matplotlib.ticker as mtickas
+
+#Ingest Data
+df = pd.read_csv('kiva_data.csv')
+print(df.head())
+
+#Examine
+df.head(25)
+
+#Create bar charts
+f, ax = plt.subplots(figsize=(15, 10))
+ax = sns.barplot(data=df, x='country', y='loan_amount')
+fmt = '${x:,.0f}'
+tick = mtick.StrMethodFormatter(fmt)
+ax.yaxis.set_major_formatter(tick)
+
+#Use hue
+f, ax = plt.subplots(figsize=(15, 10))
+
+sns.barplot(data=df, x="country", y="loan_amount", hue='gender')
+
+fmt = '${x:,.0f}'
+tick = mtick.StrMethodFormatter(fmt)
+ax.yaxis.set_major_formatter(tick)
+
+#Styling
+sns.set_palette('Accent')
+sns.set_style('dark')
+plt.figure(figsize=(25, 15))
+ax.set_title('Loan Amounts Between Genders')
+sns.barplot(data=df, x="country", y="loan_amount", hue='gender')
+
+#Create boxplots
+plt.figure(figsize=(16, 10))
+sns.boxplot(data=df, x='country', y='loan_amount')
+
+#Organize boxplots by activity
+plt.figure(figsize=(16, 10))
+sns.boxplot(data=df, x='activity', y='loan_amount')
+
+#Create violin plots
+plt.figure(figsize=(16, 10))
+sns.violinplot(data=df, x="activity", y="loan_amount")
+
+#Violin plots by country
+plt.figure(figsize=(16, 10))
+sns.violinplot(data=df, x="country", y="loan_amount")
+
+#Split violin plots
+sns.set_palette("Spectral")
+plt.figure(figsize=(18, 12))
+sns.violinplot(data=df, x="country", y="loan_amount", hue='gender', split=True)
